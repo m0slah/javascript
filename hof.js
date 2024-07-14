@@ -57,10 +57,20 @@
 // Popular Higher Order Functions in JavaScript
 // map() function
 
-const numbers = [1, 2, 3, 4, 5];
-const double = numbers.map((num) => num * 2);
-console.log(double);
+// const numbers = [1, 2, 3, 4, 5];
+// const double = numbers.map((num) => num * 2);
+// console.log(double);
+
+// const names = ["apple", "banana", "orange"];
+// const upperCaseNames = names.map((name) => name.toUpperCase());
+// console.log(upperCaseNames);
+
+//////////////////////////////////////////////////////////////////////////
+// filter() function
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+console.log(evenNumbers);
 
 const names = ["apple", "banana", "orange"];
-const upperCaseNames = names.map((name) => name.toUpperCase());
-console.log(upperCaseNames);
+const longWords = names.filter((name) => name.length > 5);
+console.log(longWords);
