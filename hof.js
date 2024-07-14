@@ -83,10 +83,23 @@
 // console.log(sum);
 
 //////////////////////////////////////////////////////////////////////////
-// forEach() function
+// // forEach() function
 
-const numbers = [1, 2, 3, 4, 5];
-numbers.forEach((num) => console.log(num));
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.forEach((num) => console.log(num));
 
-const names = ["apple", "banana", "orange","greep"];
-names.forEach((name) => console.log(name));
+// const names = ["apple", "banana", "orange","greep"];
+// names.forEach((name) => console.log(name));
+
+//////////////////////////////////////////////////////////////////////////
+
+// some() Checking if at least one element in an array meets a condition.
+// Example 1: Checking if any number in the array is greater than 10
+
+// const numbers = [1, 2, 3, 4, 5];
+// const greaterThanThree = numbers.some((num) => num > 3);
+// console.log(greaterThanThree);
+
+// const words = ["apple", "banana", "grape", "kiwi", "orange"];
+// const startWithA = words.some((name) => name.startsWith("a"));
+// console.log(startWithA);
