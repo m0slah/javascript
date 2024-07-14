@@ -66,11 +66,20 @@
 // console.log(upperCaseNames);
 
 //////////////////////////////////////////////////////////////////////////
-// filter() function
-const numbers = [1, 2, 3, 4, 5, 6];
-const evenNumbers = numbers.filter((num) => num % 2 === 0);
-console.log(evenNumbers);
+//  filter() function
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// console.log(evenNumbers);
 
-const names = ["apple", "banana", "orange"];
-const longWords = names.filter((name) => name.length > 5);
-console.log(longWords);
+// const names = ["apple", "banana", "orange"];
+// const longWords = names.filter((name) => name.length > 5);
+// console.log(longWords);
+
+//////////////////////////////////////////////////////////////////////////
+// reduce() function
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+
+
