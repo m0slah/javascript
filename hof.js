@@ -1,11 +1,23 @@
-function higherOrderFunction(callback) {
-  console.log("Executing the higher order function...");
+// function higherOrderFunction(callback) {
+//   console.log("Executing the higher order function...");
 
-    callback();
+//     callback();
+// }
+
+// function callbackFunction() {
+//   console.log("callback function");
+// }
+
+// higherOrderFunction(callbackFunction);
+
+function createGreeter(greeting) {
+  return function (name) {
+    console.log(`${greeting}  ${name}`);
+  };
 }
 
-function callbackFunction() {
-  console.log("callback function");
-}
+const greetHello = createGreeter("hello");
+greetHello("world");
 
-higherOrderFunction(callbackFunction);
+const greetBye = createGreeter("good bye");
+greetBye("world");
