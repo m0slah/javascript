@@ -77,9 +77,16 @@
 
 //////////////////////////////////////////////////////////////////////////
 // reduce() function
+// const numbers = [1, 2, 3, 4, 5];
+
+// const sum = numbers.reduce((acc, num) => acc + num, 0);
+// console.log(sum);
+
+//////////////////////////////////////////////////////////////////////////
+// forEach() function
+
 const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((num) => console.log(num));
 
-const sum = numbers.reduce((acc, num) => acc + num, 0);
-console.log(sum);
-
-
+const names = ["apple", "banana", "orange","greep"];
+names.forEach((name) => console.log(name));
