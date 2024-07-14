@@ -35,12 +35,23 @@
 
 // console.log(doubleNumber);
 
-function filterArray(array, condition) {
-  return array.filter(condition);
+// function filterArray(array, condition) {
+//   return array.filter(condition);
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const evenNumbers = filterArray(numbers, (num) => num % 2 === 0);
+
+// console.log(evenNumbers);
+
+function createMultiplier(factor) {
+  return function (number) {
+    return number * factor;
+  };
 }
 
-const numbers = [1, 2, 3, 4, 5];
+const double = createMultiplier(5);
+console.log(double(2));
 
-const evenNumbers = filterArray(numbers, (num) => num % 2 === 0);
 
-console.log(evenNumbers);
