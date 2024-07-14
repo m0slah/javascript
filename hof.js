@@ -45,13 +45,22 @@
 
 // console.log(evenNumbers);
 
-function createMultiplier(factor) {
-  return function (number) {
-    return number * factor;
-  };
-}
+// function createMultiplier(factor) {
+//   return function (number) {
+//     return number * factor;
+//   };
+// }
 
-const double = createMultiplier(5);
-console.log(double(2));
+// const double = createMultiplier(5);
+// console.log(double(2));
 
+// Popular Higher Order Functions in JavaScript
+// map() function
 
+const numbers = [1, 2, 3, 4, 5];
+const double = numbers.map((num) => num * 2);
+console.log(double);
+
+const names = ["apple", "banana", "orange"];
+const upperCaseNames = names.map((name) => name.toUpperCase());
+console.log(upperCaseNames);
