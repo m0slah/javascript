@@ -10,14 +10,27 @@
 
 // higherOrderFunction(callbackFunction);
 
-function createGreeter(greeting) {
-  return function (name) {
-    console.log(`${greeting}  ${name}`);
-  };
+// function createGreeter(greeting) {
+//   return function (name) {
+//     console.log(`${greeting}  ${name}`);
+//   };
+// }
+
+// const greetHello = createGreeter("hello");
+// greetHello("world");
+
+// const greetBye = createGreeter("good bye");
+// greetBye("world");
+
+function performOperationOnArray(array, operation) {
+  return array.map(operation);
 }
 
-const greetHello = createGreeter("hello");
-greetHello("world");
+function double(number) {
+  return number * 2;
+}
 
-const greetBye = createGreeter("good bye");
-greetBye("world");
+const numbers = [1, 2, 3, 4, 5];
+const doubleNumber = performOperationOnArray(numbers, double);
+
+console.log(doubleNumber);
