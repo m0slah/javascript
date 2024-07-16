@@ -39,6 +39,26 @@ function multiply(firstNumber, secondNumber) {
 }
 
 // const result = multiply(2, 5);
-const result = multiply(3, "5");
+// const result = multiply(3, "5");
 
-console.log(result);
+// console.log(result);
+
+//////////////////////////////////////////
+// Coercion
+// console.log(3 * true);
+// console.log(3 * false);
+
+// console.log(3 / 0);
+// console.log(Number("abc "));
+
+// console.log("prop" in null);
+
+function isNan(number) {
+  let num = Boolean(number);
+
+  return num;
+}
+
+const result = isNan(1);
+
+console.log(typeof result);
