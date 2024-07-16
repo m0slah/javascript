@@ -23,6 +23,22 @@ function multiply(firstNumber, secondNumber) {
 }
 
 // const result = multiply(2, 5);
+// const result = multiply(3, "5");
+
+// console.log(result);
+
+//////////////////////////////////////////
+// he function can convert its arguments to useful values:
+
+function multiply(firstNumber, secondNumber) {
+  if (typeof firstNumber !== "number" || typeof secondNumber !== "number") {
+    return Number(firstNumber) * Number(secondNumber);
+  }
+
+  return firstNumber * secondNumber;
+}
+
+// const result = multiply(2, 5);
 const result = multiply(3, "5");
 
 console.log(result);
